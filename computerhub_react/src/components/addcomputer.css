@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    max-width: 600px; /* Adjust maximum width for better responsiveness */
+    margin: 20px auto;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column; /* Set input groups to stack vertically */
+    margin-bottom: 10px; /* Add margin between input groups */
+}
+
+label {
+    width: 100%; /* Make label take up full width */
+    margin-bottom: 5px; /* Add some space between stacked label and input */
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%; /* Make input take up full width */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%; /* Make button take up full width */
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media screen and (min-width: 600px) {
+    .input-group {
+        flex-direction: row; /* On larger screens, set input groups to display horizontally */
+    }
+
+    .input-group > label {
+        width: 45%; /* Adjust label width for two columns */
+    }
+
+    .input-group > input[type="text"],
+    .input-group > input[type="number"],
+    .input-group > select {
+        width: 50%; /* Set input width to 50% for two columns */
+        margin-right: 5%; /* Add margin between inputs */
+    }
+}

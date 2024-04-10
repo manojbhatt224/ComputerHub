@@ -1,0 +1,127 @@
+.computer-list {
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f8f9fa; /* Light background color */
+    margin-top:20px;
+  }
+  
+  .computer-list h2 {
+    margin-bottom: 20px;
+  }
+  
+  .computer-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .computer-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* White background color */
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+    
+    width: 80%; /* Calculate width for 2 items per row with margins */
+    margin: 10px;
+    padding: 20px;
+
+  }
+  
+  .computer-details {
+    flex: 1;
+  }
+  
+  .brand-logo-container {
+    margin-left: 20px;
+  }
+  
+  .brand-logo {
+    width: 100px;
+    height: auto;
+  }
+
+.button-wrapper{
+    width:30%;
+    display:flex;
+
+}
+.computer-item button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff; /* Blue color for Update button */
+  color: #fff;
+}
+
+.computer-item button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+
+.computer-item button.delete {
+  background-color: #dc3545; /* Red color for Delete button */
+}
+
+.computer-item button.delete:hover {
+  background-color: #c82333; /* Darker red color on hover */
+}
+
+
+
+/* poppup for updating */
+.update-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Ensure popup is above other elements */
+    opacity: 100; 
+    transition: opacity 0.3s ease-in-out; /* Smooth fade in/out animation */
+  }
+  
+  .update-popup.active {
+    opacity: 1; /* Show the popup when active */
+  }
+  
+  .update-popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px; /* Set a maximum width for the popup content */
+    margin: 0 auto; /* Center the popup horizontally */
+  }
+  
+  .update-popup h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .update-popup form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .update-popup button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
